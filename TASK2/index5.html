@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    dfghjk
+    <script>
+        const currentUrl = window.location.href;
+
+// Create a URL object to easily work with the URL
+ const url = new URL(currentUrl);
+
+// Get the value of 'ids' parameter from the URL query string
+const receivedQueryString = url.searchParams.get('ids');
+
+// Parse the JSON data from the received query string
+const receivedIds = JSON.parse(receivedQueryString);
+
+// Log the parsed data to the console (just for demonstration)
+console.log(receivedIds);
+    </script>
+</body>
+</html>

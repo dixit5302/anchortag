@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       img{
+        display: block;
+       }
+       button{
+        margin-top: 20px;
+        margin-left: 20px;
+       }
+    </style>
+</head>
+<body>
+    <img src="OFFbulb.jpg" alt="" id="bulb_Img">
+    <button id="on">ON</button>
+    <button id="off">OFF</button>
+
+    <script>
+        var a = document.getElementById("bulb_Img")
+        var onBtn = document.getElementById("on")
+        var offBtn = document.getElementById("off")
+
+        offBtn.addEventListener("click", function(){
+            a.setAttribute("src", "OFFbulb.jpg")
+        })
+
+        onBtn.addEventListener("click", function(){
+            a.setAttribute("src", "ONbulb.jpg")
+        })
+    </script>
+</body>
+</html>
